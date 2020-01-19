@@ -5,8 +5,8 @@
 //   sendResponse({count: matches.length})
 // })
 
-const re = new RegExp('.+', 'gi')
-const matches = document.body.innerText.match(re) || []
+const re = new RegExp('.*', 'gi')
+const matches = document.documentElement.innerHTML.match(re) || []
 
 chrome.runtime.sendMessage({
   url: window.location.href,
