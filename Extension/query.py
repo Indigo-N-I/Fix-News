@@ -30,5 +30,5 @@ def get_data_info(text):
 important_list = get_data_info("A family crisis: What's in store for the British royals")
 query = " ".join(important_list)
 
-for j in search(query, tld = "co.in", num = 10, stop = 5, pause = 2):
-    print(j)
+for k in search(query, tld = "co.in", num = 10, stop = 5, pause = 2):
+    print(k)
