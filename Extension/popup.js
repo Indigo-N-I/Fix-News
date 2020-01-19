@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
 
   const bg = chrome.extension.getBackgroundPage()
-  // alert(Objects.keys(bg.selections))
-  Object.keys(bg.selections).forEach(function(url){
+  alert(Object.keys(bg.bears))
+  Object.keys(bg.bears).forEach(function(url){
     const div = document.createElement('div')
-    div.textContent = `${url}: ${bg.selections[url]}`
+    div.textContent = `${url}: ${bg.bears[url]}`
     document.body.appendChild(div)
   })
 }, false)
