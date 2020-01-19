@@ -6,3 +6,11 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 chrome.browserAction.onClicked.addListener(function (tab) {
   chrome.tabs.create({url: 'popup.html'})
 })
+
+chrome.tabs.executeScript( {
+  //   code: "window.getSelection().toString();"
+  // }, function(selection) {
+  //   alert("applesauce")
+  //   alert(selection);
+  // }
+  });
