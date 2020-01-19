@@ -8,9 +8,9 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 })
 
 chrome.tabs.executeScript( {
-  //   code: "window.getSelection().toString();"
-  // }, function(selection) {
-  //   alert("applesauce")
-  //   alert(selection);
-  // }
+    code: "window.getSelection().toString();"
+  }, function(selection) {
+    alert("applesauce")
+    alert(selection);
+  }
   });
