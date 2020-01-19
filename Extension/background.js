@@ -8,6 +8,7 @@ chrome.browserAction.onClicked.addListener(function(tab){
   chrome.tabs.create({url: 'popup.html'})
 })
 
+<<<<<<< HEAD
 // window.bears = {}
 // var id = chrome.tabs.query({currentWindow: true, active: true},
 //   function (tabs){
@@ -42,3 +43,11 @@ chrome.browserAction.onClicked.addListener(function(tab){
 //  //chrome.tabs.onHighlighted.addListener(function (){
 // //   alert(Document)
 // // })
+=======
+  chrome.tabs.executeScript( {
+    code: "window.getSelection().toString();"
+  }, function(selection) {
+    alert("applesauce")
+    alert(selection);
+  });
+>>>>>>> master
