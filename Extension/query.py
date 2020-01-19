@@ -27,8 +27,12 @@ def get_data_info(text):
     # print([b.name for b in response.entities])
     return [b.name for b in response.entities if b.salience > 0.01]
 
-important_list = get_data_info("A family crisis: What's in store for the British royals")
-query = " ".join(important_list)
+def get_websites(texy):
+    important_list = get_data_info(text)
+    query = " ".join(important_list)
 
-for k in search(query, tld = "co.in", num = 10, stop = 5, pause = 2):
-    print(k)
+    links = []
+    for k in search(query, tld = "co.in", num = 10, stop = 5, pause = 2):
+        links.append(k)
+
+    return links
